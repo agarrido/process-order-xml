@@ -1,4 +1,4 @@
-package rdf;
+package es.isoco.processOrder.rdf;
 
 public class VarExtractor {
 	

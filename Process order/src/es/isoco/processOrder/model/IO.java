@@ -1,4 +1,4 @@
-package model;
+package es.isoco.processOrder.model;
 
 import java.util.ArrayList;
 

@@ -1,5 +1,4 @@
-import sparql.Queries;
-import sparql.RunQuery;
+package es.isoco.processOrder.main;
 
 
 public class Ppal {

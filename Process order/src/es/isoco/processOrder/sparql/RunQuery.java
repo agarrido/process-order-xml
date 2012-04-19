@@ -1,4 +1,4 @@
-package sparql;
+package es.isoco.processOrder.sparql;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,11 +1,13 @@
+package es.isoco.processOrder.main;
 import java.util.Scanner;
 
-import model.Content;
+import es.isoco.processOrder.model.Content;
+import es.isoco.processOrder.model.Process;
+import es.isoco.processOrder.rdf.VarExtractor;
+import es.isoco.processOrder.sparql.Queries;
+import es.isoco.processOrder.sparql.RunQuery;
 
-import rdf.VarExtractor;
-import model.Process;
-import sparql.Queries;
-import sparql.RunQuery;
+
 
 
 public class RunExample {

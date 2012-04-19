@@ -1,9 +1,11 @@
+package es.isoco.processOrder.main;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import rdf.VarExtractor;
-import sparql.Queries;
-import sparql.RunQuery;
+import es.isoco.processOrder.rdf.VarExtractor;
+import es.isoco.processOrder.sparql.Queries;
+import es.isoco.processOrder.sparql.RunQuery;
+
 
 
 public class RunAll {
@@ -13,7 +15,7 @@ public class RunAll {
 	private Queries q;
 	private RunQuery rQ;
 	private VarExtractor extractor;
-	private String finalResult=null;;
+	private String finalResult;
 	
 	public RunAll(){
 		q= new Queries();
@@ -25,11 +27,11 @@ public class RunAll {
 
 	public String run() {
 		setWfRuns();
-		finalResult = finalResult+"<?xml version=\"1.0\" encoding='iso-8859-1' ?>\n";
+		finalResult = "<?xml version=\"1.0\" encoding='iso-8859-1' ?>\n";
 		finalResult = finalResult+"<root>\n";
 		iterateRuns();
 		finalResult = finalResult+"</root>\n";
-		//System.out.println(finalResult);
+		System.out.println(finalResult);
 		return finalResult;
 	}
 
